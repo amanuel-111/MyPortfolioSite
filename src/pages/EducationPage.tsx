@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Award, BookOpen, CheckCircle2, Cpu } from 'lucide-react';
+import { GraduationCap, BookOpen, CheckCircle2 } from 'lucide-react';
 
 const educationData = [
   {

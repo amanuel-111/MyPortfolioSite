@@ -20,7 +20,7 @@ export const projects: Project[] = [
     subtitle: 'Full-Stack Web Application',
     description: 'Developed an AI-powered study platform that helps students learn through interactive chat, personalized study assistance, and educational resources.',
     detailedOverview: 'Developed an AI-powered study platform that helps students learn through interactive chat, personalized study assistance, and educational resources. Built with React and modern AI integrations to create custom learning pathways, instant automated summaries, and interactive context-aware study chat.',
-    imageUrl: 'https://storage.googleapis.com/dala-prod-public-storage/generated-images/bc51d99a-ad4a-4033-a9c9-f7db41bd481b/ai-study-coach-7e7fc645-1783598306960.webp',
+    imageUrl: '/images/ai-study-coach.webp',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'OpenAI API', 'Framer Motion', 'Node.js'],
     features: [
       'Interactive AI study chat for instant topic assistance',
@@ -36,11 +36,11 @@ export const projects: Project[] = [
     category: 'Logistics',
     subtitle: 'Full-Stack Web Application',
     description: 'Designed and developed a cargo management system for managing shipments, customers, and logistics operations.',
-    detailedOverview: 'Designed and developed a cargo management system for managing shipments, customers, and logistics operations. Features real-time cargo status tracking, customer account dispatching, freight records, and automated operations administration.',
-    imageUrl: 'https://storage.googleapis.com/dala-prod-public-storage/generated-images/bc51d99a-ad4a-4033-a9c9-f7db41bd481b/cargo-management-system-8ce61440-1783598307718.webp',
+    detailedOverview: 'Designed and developed a cargo management system for managing shipments, customers, and logistics operations. Features cargo status tracking, customer account dispatching, freight records, and automated operations administration.',
+    imageUrl: '/images/cargo-management-system.webp',
     technologies: ['JavaScript', 'React', 'Node.js', 'Express', 'MySQL', 'REST API'],
     features: [
-      'Full shipment tracking & operational status management',
+      'Shipment tracking & operational status management',
       'Customer and order management dashboard',
       'Automated freight logistics calculations',
       'Secure multi-role admin & user operations'
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     subtitle: 'Full-Stack Web Application',
     description: 'Developed an online book rental platform that enables users to browse, rent, and manage book collections.',
     detailedOverview: 'Developed an online book rental platform that enables users to browse, rent, and manage book collections. Complete digital library circulation solution featuring dynamic book filtering, rental history, return management, and admin oversight.',
-    imageUrl: 'https://storage.googleapis.com/dala-prod-public-storage/generated-images/bc51d99a-ad4a-4033-a9c9-f7db41bd481b/book-rental-application-9dca33c7-1783598307257.webp',
+    imageUrl: '/images/book-rental-application.webp',
     technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap'],
     features: [
       'Browse & search book collections by genre or title',

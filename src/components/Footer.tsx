@@ -24,8 +24,8 @@ const Footer: React.FC = () => {
               </span>
             </div>
 
-            <p className="text-slate-400 text-sm leading-relaxed max-w-md">
-              Computer Science Graduate & Electronics Technician based in Bahir Dar, Ethiopia. Passionate about software engineering, computer networking, and system diagnostics.
+            <p className="text-slate-400 max-w-sm mt-4 md:mt-0 text-sm leading-relaxed">
+              Computer Science graduate with training in electronics equipment servicing, networking, cybersecurity, and full-stack web development.
             </p>
 
             <div className="flex items-center space-x-3 pt-2">
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
                 <a href="#projects" className="text-slate-400 hover:text-cyan-400 transition-colors">Featured Projects</a>
               </li>
               <li>
-                <a href="#education" className="text-slate-400 hover:text-cyan-400 transition-colors">Education & TVET</a>
+                <a href="#education" className="text-slate-400 hover:text-cyan-400 transition-colors">Education</a>
               </li>
               <li>
                 <a href="#certifications" className="text-slate-400 hover:text-cyan-400 transition-colors">Certifications</a>

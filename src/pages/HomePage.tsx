@@ -123,7 +123,7 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
               <div className="relative glass-card rounded-3xl p-3 border border-slate-700/80 overflow-hidden shadow-2xl">
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-slate-950">
                   <img
-                    src="https://storage.googleapis.com/dala-prod-public-storage/attachments/9b307ea8-c793-477e-9a01-be883605f72a/1765615745870_2.jpg"
+                    src="/images/profile.jpg"
                     alt="Amanuel Tilahun"
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                   />
@@ -151,7 +151,7 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-10 border-t border-slate-800/80">
           <div className="glass-card rounded-2xl p-5 text-center border border-slate-800">
             <div className="text-3xl font-extrabold text-white mb-1">7</div>
-            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Certifications</div>
+            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Training & Certifications</div>
             <div className="text-[11px] text-slate-400 mt-1">Networking, CyberSec & Systems</div>
           </div>
 
@@ -168,9 +168,9 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
           </div>
 
           <div className="glass-card rounded-2xl p-5 text-center border border-slate-800">
-            <div className="text-3xl font-extrabold text-white mb-1">100%</div>
-            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Commitment</div>
-            <div className="text-[11px] text-slate-400 mt-1">Continuous Learning & Growth</div>
+            <div className="text-3xl font-extrabold text-white mb-1">∞</div>
+            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Continuous Learning</div>
+            <div className="text-[11px] text-slate-400 mt-1">Skill Growth & Adaptability</div>
           </div>
         </div>
       </div>
