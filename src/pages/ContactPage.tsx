@@ -52,7 +52,7 @@ const ContactPage: React.FC = () => {
       } else {
         toast.error('Could not send message. Please try emailing directly.');
       }
-    } catch (error) {
+    } catch {
       toast.error('Something went wrong. Please try emailing directly.');
     } finally {
       setIsSubmitting(false);

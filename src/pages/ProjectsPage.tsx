@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { projects, Project } from '@/data/projects';
 import ProjectCard from '@/components/ProjectCard';
 import ProjectModal from '@/components/ProjectModal';
-import { Layers, Sparkles } from 'lucide-react';
+import { Layers } from 'lucide-react';
 
 const categories = ['All', 'AI & Web', 'Logistics', 'Full-Stack'];
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Network, Wrench, ShieldCheck, Terminal, Cpu } from 'lucide-react';
+import { Code2, Network, Wrench, ShieldCheck, Cpu } from 'lucide-react';
 
 const services = [
   {
@@ -18,10 +18,10 @@ const services = [
   },
   {
     icon: Wrench,
-    title: 'Electronics Equipment Servicing',
-    subtitle: 'Hardware Repair & Diagnostics',
-    description: 'Certified Level IV electronics technician capable of schematic interpretation, component testing, precise soldering, and power diagnostics.',
-    tags: ['Level IV TVET', 'Circuit Testing', 'Soldering', 'Power Supplies', 'Multimeters']
+    title: 'AI-Assisted Application Development',
+    subtitle: 'Smart Features & Integration',
+    description: 'Leveraging AI APIs and models to build intelligent, context-aware web applications and personalized user experiences.',
+    tags: ['OpenAI API', 'LLM Integration', 'Prompt Engineering', 'AI Chatbots']
   },
   {
     icon: ShieldCheck,
@@ -47,7 +47,7 @@ const ServicesSection: React.FC = () => {
             Comprehensive <span className="text-cyan-400">Technical Expertise</span>
           </h2>
           <p className="mt-4 text-slate-400 text-base md:text-lg">
-            Bridging hardware diagnostics, network management, and software engineering to provide end-to-end tech solutions.
+            Bridging full-stack software engineering, AI integration, network management, and cybersecurity to provide robust tech solutions.
           </p>
         </div>
 

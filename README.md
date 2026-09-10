@@ -1,120 +1,82 @@
-# React + Vite + shadcn/ui Starter Template
+# Amanuel Tilahun — Developer Portfolio
 
-A modern React starter template built with Vite, TypeScript, Tailwind CSS, and shadcn/ui components.
+Personal portfolio website showcasing my full-stack development projects, technical skills, education, and professional training. Built with React, TypeScript, and Tailwind CSS.
 
-## 🚀 Features
+## About Me
 
-- ⚡️ **Vite** - Fast build tool and development server
-- ⚛️ **React 18** - Latest React with hooks support
-- 🎯 **TypeScript** - Type safety and better developer experience
-- 🎨 **Tailwind CSS** - Utility-first CSS framework
-- 🧩 **shadcn/ui** - Beautifully designed components built with Radix UI
-- 📦 **Path Mapping** - Clean imports with `@/` prefix
+I am a Junior Full-Stack Developer and AI-Powered Web Developer based in Bahir Dar, Ethiopia. I am a recent graduate in Computer Science from Bahir Dar University with a strong interest in Full-stack web development, AI-assisted application development, Cybersecurity, IT infrastructure, and Networking.
 
-## 📦 Included shadcn/ui Components
+## Skills
 
-- Button
-- Card
-- Input
-- Label
-- Badge
-- Dialog
-- And more...
+**Frontend:** React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS  
+**Backend:** Node.js, Express.js, Python, REST APIs  
+**Database:** MySQL, PostgreSQL  
+**Other:** Git/GitHub, Linux, Networking, Cybersecurity fundamentals  
 
-## 🛠️ Getting Started
+## Featured Projects
 
-1. **Install dependencies**
+### Smart Transport — Cargo Management System
+A full-stack logistics and cargo management application.
+- **Technologies:** JavaScript, React, Node.js, Express, MySQL, REST API
+- **Repository:** [Cargo Management System](https://github.com/amanuel-111/Cargo-Management-System)
 
+### AI Study Coach
+An AI-assisted learning platform designed to help students learn effectively.
+- **Technologies:** React, TypeScript, Tailwind CSS, OpenAI API, Framer Motion, Node.js
+- **Repository:** [AI Study Coach](https://github.com/amanuel-111/AI-Study-Coach)
+
+### Book Rental Application
+A full-stack book rental management application for browsing, renting, and managing collections.
+- **Technologies:** PHP, MySQL, JavaScript, HTML5, CSS3, Bootstrap
+- **Repository:** [Book Rental Application](https://github.com/amanuel-111/Book_Rental_Application)
+
+## Education
+
+**Bachelor of Science in Computer Science**  
+*Bahir Dar University*  
+2019 – 2025  
+
+## Certifications & Training
+
+- Gebeya Linux Server Administration
+- O'Reilly cybersecurity training
+- CCNA Starting Course Completion
+- CompTIA Network+ training
+- Cisco CCST IT Support
+- Cisco Networking Foundations
+- Cybersecurity for IT Professionals
+
+## Getting Started
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/amanuel-111/MyPortfolioSite.git
+   cd MyPortfolioSite
+   ```
+
+2. **Install dependencies:**
    ```bash
    npm install
    ```
 
-2. **Start development server**
-
+3. **Start the development server:**
    ```bash
    npm run dev
    ```
 
-3. **Build for production**
-
+4. **Build for production:**
    ```bash
    npm run build
    ```
 
-4. **Preview production build**
-   ```bash
-   npm run preview
-   ```
+## Contact
 
-## 📁 Project Structure
+- **Email:** amatila111@gmail.com
+- **LinkedIn:** [amanuel-tilahun](https://www.linkedin.com/in/amanuel-tilahun-03231226a)
+- **GitHub:** [@amanuel-111](https://github.com/amanuel-111)
 
-```
-src/
-├── components/
-│   └── ui/              # shadcn/ui components
-├── lib/
-│   └── utils.ts         # Utility functions
-├── App.tsx              # Main application component
-├── index.css            # Global styles with Tailwind
-└── main.tsx             # Application entry point
-```
+## License
 
-## 🎨 Customization
-
-### Adding New shadcn/ui Components
-
-This template is pre-configured with shadcn/ui. You can add more components by creating them in the `src/components/ui/` directory.
-
-### Tailwind Configuration
-
-The Tailwind configuration is set up with shadcn/ui color variables. You can customize colors and other design tokens in:
-
-- `tailwind.config.js` - Tailwind configuration
-- `src/index.css` - CSS custom properties for themes
-
-### TypeScript Configuration
-
-Path mapping is configured for clean imports:
-
-```typescript
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-```
-
-## 🌗 Dark Mode
-
-The template includes dark mode support through Tailwind's `dark:` classes and CSS custom properties.
-
-## 📚 Learn More
-
-- [Vite Documentation](https://vitejs.dev/)
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [shadcn/ui](https://ui.shadcn.com/)
-- [Radix UI](https://www.radix-ui.com/)
-
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
-**⚡ Powered by [Dala](https://dala.gebeya.com)** - The AI-powered web development platform that helps you build full-stack applications faster.
-
----
-
-## 🤖 What is Dala?
-
-**[Gebeya Dala](https://dala.gebeya.com)** is an intelligent web development platform that accelerates your React development workflow. Build, preview, and deploy web applications, and instant development environments.
-
-🔗 **Try Dala:** [dala.gebeya.com](https://dala.gebeya.com)
-
-### Why Use Dala?
-
-- **AI-Powered Development** - Get intelligent code suggestions and automated component generation
-- **Instant Preview** - See your changes live in real-time sandbox environments
-- **Zero Setup** - No local environment configuration needed
-- **Collaborative** - Build and share projects with your team
-- **Deployment Ready** - One-click deployment to production
-
----
-
-Built with ❤️ by the Dala team to help developers build faster and smarter.
+This project is open-source and available under the MIT License.

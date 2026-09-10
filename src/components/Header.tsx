@@ -5,20 +5,20 @@ interface HeaderProps {
   onOpenResume?: () => void;
 }
 
+const navLinks = [
+  { href: '#home', label: 'Home' },
+  { href: '#services', label: 'Services' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#education', label: 'Education' },
+  { href: '#certifications', label: 'Certifications' },
+  { href: '#contact', label: 'Contact' },
+];
+
 const Header: React.FC<HeaderProps> = ({ onOpenResume }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
-
-  const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#services', label: 'Services' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#education', label: 'Education' },
-    { href: '#certifications', label: 'Certifications' },
-    { href: '#contact', label: 'Contact' },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {

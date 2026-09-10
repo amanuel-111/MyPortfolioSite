@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Phone, Linkedin, MapPin, ArrowRight, Download, Award, GraduationCap, Code2, Sparkles, CheckCircle2, FileText } from 'lucide-react';
+import { Mail, Phone, Linkedin, MapPin, ArrowRight, GraduationCap, Sparkles, CheckCircle2, FileText } from 'lucide-react';
 
 interface HomePageProps {
   onOpenResume?: () => void;
 }
 
 const roles = [
-  'Computer Science Graduate',
-  'Full-Stack Software Engineer',
-  'IT & Network Systems Specialist',
-  'Level IV Electronics Technician'
+  'Junior Full-Stack Developer',
+  'AI-Powered Web Developer',
+  'Computer Science Graduate'
 ];
 
 const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
@@ -58,7 +57,7 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
 
             {/* Descriptive Bio */}
             <p className="text-slate-300 text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Recent Computer Science graduate & Level IV TVET trained in Electrical Electronics Equipment Servicing Management. Skilled in software development, network troubleshooting, hardware maintenance, and ICT services.
+              Junior Full-Stack Developer & recent Computer Science graduate. Passionate about building modern, AI-assisted web applications, exploring cybersecurity, and managing IT infrastructure.
             </p>
 
             {/* Quick Contact Chips */}
@@ -151,27 +150,27 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-10 border-t border-slate-800/80">
           <div className="glass-card rounded-2xl p-5 text-center border border-slate-800">
-            <div className="text-3xl font-extrabold text-white mb-1">8</div>
+            <div className="text-3xl font-extrabold text-white mb-1">7</div>
             <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Certifications</div>
-            <div className="text-[11px] text-slate-400 mt-1">O'Reilly, Cisco, LinkedIn & Gebeya</div>
+            <div className="text-[11px] text-slate-400 mt-1">Networking, CyberSec & Systems</div>
           </div>
 
           <div className="glass-card rounded-2xl p-5 text-center border border-slate-800">
             <div className="text-3xl font-extrabold text-white mb-1">3</div>
             <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Full-Stack Projects</div>
-            <div className="text-[11px] text-slate-400 mt-1">AI, Logistics & Rental</div>
+            <div className="text-[11px] text-slate-400 mt-1">AI, Logistics & Rental Apps</div>
           </div>
 
           <div className="glass-card rounded-2xl p-5 text-center border border-slate-800">
-            <div className="text-3xl font-extrabold text-white mb-1">2</div>
-            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Degrees / Diplomas</div>
-            <div className="text-[11px] text-slate-400 mt-1">B.Sc CS & TVET Level IV</div>
+            <div className="text-3xl font-extrabold text-white mb-1">1</div>
+            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Degree</div>
+            <div className="text-[11px] text-slate-400 mt-1">B.Sc Computer Science</div>
           </div>
 
           <div className="glass-card rounded-2xl p-5 text-center border border-slate-800">
             <div className="text-3xl font-extrabold text-white mb-1">100%</div>
-            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Community Impact</div>
-            <div className="text-[11px] text-slate-400 mt-1">Software & Electronics</div>
+            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Commitment</div>
+            <div className="text-[11px] text-slate-400 mt-1">Continuous Learning & Growth</div>
           </div>
         </div>
       </div>

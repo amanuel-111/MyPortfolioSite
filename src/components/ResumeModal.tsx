@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Download, Printer, GraduationCap, Award, MapPin, Mail, Phone, Linkedin, CheckCircle2, FolderGit2, Wrench, Languages, User } from 'lucide-react';
+import { X, Printer, GraduationCap, Award, MapPin, Mail, Phone, Linkedin, CheckCircle2, FolderGit2, Wrench, Languages, User } from 'lucide-react';
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -50,7 +50,7 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
             <div>
               <h1 className="text-2xl font-bold text-white tracking-wide">AMANUEL TILAHUN</h1>
               <p className="text-cyan-400 font-medium mt-0.5 text-xs md:text-sm">
-                Computer Science Graduate | Level IV TVET Electronics Servicing Specialist
+                Junior Full-Stack Developer & AI-Powered Web Developer
               </p>
             </div>
             <div className="space-y-1.5 text-xs text-slate-400 shrink-0">
@@ -75,7 +75,7 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
               <User className="w-4 h-4" /> Objective
             </h3>
             <p className="leading-relaxed bg-slate-800/30 p-4 rounded-xl border border-slate-800/80 text-xs md:text-sm text-slate-200">
-              Recent graduate of Computer Science, also Level IV TVET trained in Electrical Electronics Equipment Servicing Management, digital skills, and the basics of networking. Holds certifications in graphics design, entry-level cybersecurity, and CompTIA Network+ Course Completion, and possesses skills in troubleshooting hardware and software problems, multimedia production, and ICT services. Focused on utilizing technology for community impact and entrepreneurial ventures.
+              Recent graduate in Computer Science with a strong interest in Full-stack web development, AI-assisted application development, Cybersecurity, IT infrastructure, and Networking. Holds certifications in Linux Server Administration, Networking, and Cybersecurity. Focused on utilizing technology to build modern, scalable solutions and eager to contribute as a Junior Full-Stack Developer.
             </p>
           </div>
 
@@ -92,13 +92,6 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
                 </div>
                 <span className="text-xs font-mono text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md">Graduate</span>
               </div>
-              <div className="p-4 bg-slate-800/40 rounded-xl border border-slate-800 flex justify-between items-start">
-                <div>
-                  <h4 className="font-bold text-white text-sm">Level IV TVET Electronics Maintenance</h4>
-                  <p className="text-xs text-cyan-400 font-medium">Bahir Dar Polytechnic College</p>
-                </div>
-                <span className="text-xs font-mono text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md">Certified</span>
-              </div>
             </div>
           </div>
 
@@ -109,21 +102,21 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
               <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800 space-y-1">
-                <span className="font-bold text-white text-xs block text-cyan-300">IT & Networking</span>
-                <p className="text-slate-300">Network troubleshooting, Windows/Linux OS basics</p>
+                <span className="font-bold text-white text-xs block text-cyan-300">Frontend Development</span>
+                <p className="text-slate-300">React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS</p>
               </div>
               <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800 space-y-1">
-                <span className="font-bold text-white text-xs block text-cyan-300">Programming Languages</span>
-                <p className="text-slate-300">Java, JavaScript, HTML, CSS, PHP, C++</p>
+                <span className="font-bold text-white text-xs block text-cyan-300">Backend Development</span>
+                <p className="text-slate-300">Node.js, Express.js, Python, REST APIs</p>
               </div>
               <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800 space-y-1">
                 <span className="font-bold text-white text-xs block text-cyan-300">Database Systems</span>
-                <p className="text-slate-300">Basic knowledge of SQL</p>
+                <p className="text-slate-300">MySQL, PostgreSQL</p>
               </div>
               <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800 space-y-1">
-                <span className="font-bold text-white text-xs block text-cyan-300">Electronics</span>
+                <span className="font-bold text-white text-xs block text-cyan-300">IT & Networking</span>
                 <p className="text-slate-300">
-                  Safe Use of Tools and Equipment, Understanding of Electronic Components, Reading Circuit Diagrams, Soldering and Desoldering, Measuring and Testing, Basic Knowledge of AC/DC and Power Systems, Troubleshooting Techniques, Preventive Maintenance
+                  Network troubleshooting, Linux OS, Cybersecurity fundamentals, Git/GitHub
                 </p>
               </div>
             </div>
@@ -136,14 +129,13 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
               {[
-                "Computer Components & Peripherals for IT Technicians Certification – Linkedin",
-                "CompTIA Network+ Course Completion – O’Reilly",
-                "Cybersecurity for IT Professionals Certification – Linkedin",
-                "Graphics Design Certification – O’Reilly",
-                "Cisco CCST IT Support Course Completion – O’Reilly",
-                "Linux Fundamentals Certification – Gebeya",
-                "Troubleshooting Common PC Issues for Users Certification – Linkedin",
-                "Cisco Networking Foundations (Switching & Routing) Certification – Linkedin"
+                "Gebeya Linux Server Administration",
+                "O'Reilly cybersecurity training",
+                "CCNA Starting Course Completion",
+                "CompTIA Network+ training",
+                "Cisco CCST IT Support",
+                "Cisco Networking Foundations",
+                "Cybersecurity for IT Professionals"
               ].map((cert, idx) => (
                 <div key={idx} className="flex items-center gap-2 p-2.5 bg-slate-800/30 rounded-lg border border-slate-800">
                   <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />

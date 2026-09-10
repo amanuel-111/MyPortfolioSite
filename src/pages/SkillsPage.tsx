@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrench, Network, Code2, BrainCircuit, Cpu, Terminal, Database, Server, Languages, CheckCircle2 } from 'lucide-react';
+import { Network, Code2, BrainCircuit, Cpu, Terminal, Database, Server, Languages, CheckCircle2 } from 'lucide-react';
 
 interface TechnicalSkill {
   name: string;
@@ -9,26 +9,17 @@ interface TechnicalSkill {
 }
 
 const skillBars: TechnicalSkill[] = [
-  { name: 'Programming Languages', level: 88, category: 'Programming', description: 'Java, JavaScript, HTML, CSS, PHP, C++' },
-  { name: 'Electronics Servicing', level: 92, category: 'Electronics', description: 'Circuit diagrams, Soldering, Component testing, Power systems' },
-  { name: 'IT & Networking', level: 85, category: 'Networking', description: 'Network troubleshooting, Windows/Linux OS basics' },
-  { name: 'Database Systems', level: 80, category: 'Database', description: 'Basic knowledge of SQL & Relational Databases' },
+  { name: 'Frontend Development', level: 90, category: 'Programming', description: 'React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS' },
+  { name: 'Backend Development', level: 85, category: 'Programming', description: 'Node.js, Express.js, Python, REST APIs' },
+  { name: 'IT & Networking', level: 80, category: 'Networking', description: 'Network troubleshooting, Linux, Cybersecurity fundamentals' },
+  { name: 'Database Systems', level: 85, category: 'Database', description: 'MySQL, PostgreSQL' },
 ];
 
 const skillTags = {
-  programming: ['Java', 'JavaScript', 'HTML', 'CSS', 'PHP', 'C++'],
-  networking: ['Network Troubleshooting', 'Windows OS Basics', 'Linux OS Basics', 'CompTIA Network+'],
-  database: ['SQL', 'Relational Database Concepts', 'Querying & Schema Basics'],
-  electronics: [
-    'Safe Use of Tools & Equipment',
-    'Understanding of Electronic Components',
-    'Reading Circuit Diagrams',
-    'Soldering and Desoldering',
-    'Measuring and Testing',
-    'Basic Knowledge of AC/DC & Power Systems',
-    'Troubleshooting Techniques',
-    'Preventive Maintenance'
-  ]
+  frontend: ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS'],
+  backend: ['Node.js', 'Express.js', 'Python', 'REST APIs'],
+  networking: ['Network Troubleshooting', 'Linux OS', 'Cybersecurity fundamentals', 'CompTIA Network+'],
+  database: ['MySQL', 'PostgreSQL', 'SQL']
 };
 
 const softSkills = [
@@ -56,7 +47,7 @@ const SkillsPage: React.FC = () => {
             Technical & <span className="text-cyan-400">Professional Competencies</span>
           </h2>
           <p className="mt-4 text-slate-400 text-base md:text-lg">
-            Software development, database fundamentals, IT networking, and Level IV TVET electronics servicing expertise.
+            Full-stack web development, database fundamentals, IT networking, and cybersecurity expertise.
           </p>
         </div>
 
@@ -97,16 +88,16 @@ const SkillsPage: React.FC = () => {
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Programming Languages */}
+            {/* Frontend Development */}
             <div className="glass-card rounded-2xl p-6 border border-slate-800">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2.5 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
                   <Code2 className="w-5 h-5" />
                 </div>
-                <h4 className="font-bold text-white text-base">Programming Languages</h4>
+                <h4 className="font-bold text-white text-base">Frontend Development</h4>
               </div>
               <div className="flex flex-wrap gap-2">
-                {skillTags.programming.map((tag, i) => (
+                {skillTags.frontend.map((tag, i) => (
                   <span key={i} className="px-3 py-1 text-xs font-mono text-cyan-200 bg-slate-800/80 rounded-lg border border-slate-700/60">
                     {tag}
                   </span>
@@ -114,17 +105,17 @@ const SkillsPage: React.FC = () => {
               </div>
             </div>
 
-            {/* IT & Networking */}
+            {/* Backend Development */}
             <div className="glass-card rounded-2xl p-6 border border-slate-800">
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
-                  <Network className="w-5 h-5" />
+                <div className="p-2.5 rounded-xl bg-teal-500/10 text-teal-400 border border-teal-500/20">
+                  <Server className="w-5 h-5" />
                 </div>
-                <h4 className="font-bold text-white text-base">IT & Networking</h4>
+                <h4 className="font-bold text-white text-base">Backend Development</h4>
               </div>
               <div className="flex flex-wrap gap-2">
-                {skillTags.networking.map((tag, i) => (
-                  <span key={i} className="px-3 py-1 text-xs font-mono text-indigo-200 bg-slate-800/80 rounded-lg border border-slate-700/60">
+                {skillTags.backend.map((tag, i) => (
+                  <span key={i} className="px-3 py-1 text-xs font-mono text-teal-200 bg-slate-800/80 rounded-lg border border-slate-700/60">
                     {tag}
                   </span>
                 ))}
@@ -148,17 +139,17 @@ const SkillsPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Electronics */}
+            {/* IT & Networking */}
             <div className="glass-card rounded-2xl p-6 border border-slate-800">
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2.5 rounded-xl bg-teal-500/10 text-teal-400 border border-teal-500/20">
-                  <Wrench className="w-5 h-5" />
+                <div className="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                  <Network className="w-5 h-5" />
                 </div>
-                <h4 className="font-bold text-white text-base">Electronics Skills</h4>
+                <h4 className="font-bold text-white text-base">IT & Networking</h4>
               </div>
               <div className="flex flex-wrap gap-2">
-                {skillTags.electronics.map((tag, i) => (
-                  <span key={i} className="px-3 py-1 text-xs font-mono text-teal-200 bg-slate-800/80 rounded-lg border border-slate-700/60">
+                {skillTags.networking.map((tag, i) => (
+                  <span key={i} className="px-3 py-1 text-xs font-mono text-indigo-200 bg-slate-800/80 rounded-lg border border-slate-700/60">
                     {tag}
                   </span>
                 ))}

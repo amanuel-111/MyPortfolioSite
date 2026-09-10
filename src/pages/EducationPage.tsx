@@ -15,20 +15,6 @@ const educationData = [
       'Operating Systems & Networking',
       'Object-Oriented Programming (Java, C++)'
     ]
-  },
-  {
-    institution: 'Bahir Dar Polytechnic College',
-    location: 'Bahir Dar, Ethiopia',
-    degree: 'Level IV TVET in Electronics Maintenance',
-    type: 'Vocational Technical Diploma',
-    icon: Cpu,
-    description: 'Hands-on practical training covering electronic device diagnosis, circuit board repair, soldering/desoldering, and electrical safety standards.',
-    highlights: [
-      'Electronics Troubleshooting & Diagnosis',
-      'Reading Schematic & Circuit Diagrams',
-      'Safe Use of Testing Instruments (Multimeters, Oscilloscopes)',
-      'Hardware Component Maintenance & Replacement'
-    ]
   }
 ];
 
@@ -45,7 +31,7 @@ const EducationPage: React.FC = () => {
             Education & <span className="text-cyan-400">Qualifications</span>
           </h2>
           <p className="mt-4 text-slate-400 text-base md:text-lg">
-            Solid foundation combining higher software education with specialized technical electronics training.
+            Solid foundation in software engineering, database systems, and networking.
           </p>
         </div>
 

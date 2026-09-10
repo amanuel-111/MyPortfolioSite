@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Award, Search, CheckCircle2, ShieldCheck, Network, Cpu, Code } from 'lucide-react';
+import { Award, Search, CheckCircle2 } from 'lucide-react';
 
 interface Certification {
   id: string;
@@ -9,17 +9,16 @@ interface Certification {
 }
 
 const certificationsList: Certification[] = [
-  { id: '1', title: "Computer Components & Peripherals for IT Technicians Certification", issuer: "LinkedIn", category: "Hardware & SysAdmin" },
-  { id: '2', title: "CompTIA Network+ Course Completion", issuer: "O'Reilly", category: "Networking" },
-  { id: '3', title: "Cybersecurity for IT Professionals Certification", issuer: "LinkedIn", category: "Cybersecurity" },
-  { id: '4', title: "Graphics Design Certification", issuer: "O'Reilly", category: "Graphics & Tech" },
-  { id: '5', title: "Cisco CCST IT Support Course Completion", issuer: "O'Reilly", category: "Hardware & SysAdmin" },
-  { id: '6', title: "Linux Fundamentals Certification", issuer: "Gebeya", category: "Hardware & SysAdmin" },
-  { id: '7', title: "Troubleshooting Common PC Issues for Users Certification", issuer: "LinkedIn", category: "Hardware & SysAdmin" },
-  { id: '8', title: "Cisco Networking Foundations (Switching & Routing) Certification", issuer: "LinkedIn", category: "Networking" },
+  { id: '1', title: "Gebeya Linux Server Administration", issuer: "Gebeya", category: "Hardware & SysAdmin" },
+  { id: '2', title: "O'Reilly cybersecurity training", issuer: "O'Reilly", category: "Cybersecurity" },
+  { id: '3', title: "CCNA Starting Course Completion", issuer: "O'Reilly", category: "Networking" },
+  { id: '4', title: "CompTIA Network+ training", issuer: "O'Reilly", category: "Networking" },
+  { id: '5', title: "Cisco CCST IT Support", issuer: "O'Reilly", category: "Hardware & SysAdmin" },
+  { id: '6', title: "Cisco Networking Foundations", issuer: "LinkedIn", category: "Networking" },
+  { id: '7', title: "Cybersecurity for IT Professionals", issuer: "LinkedIn", category: "Cybersecurity" },
 ];
 
-const categories = ['All', 'Networking', 'Hardware & SysAdmin', 'Cybersecurity', 'Graphics & Tech'];
+const categories = ['All', 'Networking', 'Hardware & SysAdmin', 'Cybersecurity'];
 
 const CertificationsPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -47,7 +46,7 @@ const CertificationsPage: React.FC = () => {
             Industry <span className="text-cyan-400">Certifications</span>
           </h2>
           <p className="mt-4 text-slate-400 text-base md:text-lg">
-            Holds 8 professional certifications and course completions across Networking, Cybersecurity, Linux Systems, Hardware Troubleshooting, and Graphics Design.
+            Holds 7 professional certifications and course completions across Networking, Cybersecurity, Linux Systems, and IT Support.
           </p>
         </div>
 

@@ -29,7 +29,6 @@ export const projects: Project[] = [
       'Adaptive learning schedule & topic summaries'
     ],
     codeLink: 'https://github.com/amanuel-111/AI-Study-Coach',
-    liveLink: 'https://github.com/amanuel-111/AI-Study-Coach',
   },
   {
     id: '2',
@@ -47,7 +46,6 @@ export const projects: Project[] = [
       'Secure multi-role admin & user operations'
     ],
     codeLink: 'https://github.com/amanuel-111/Cargo-Management-System',
-    liveLink: 'https://github.com/amanuel-111/Cargo-Management-System',
   },
   {
     id: '3',
@@ -65,6 +63,5 @@ export const projects: Project[] = [
       'Admin portal for catalog inventory management'
     ],
     codeLink: 'https://github.com/amanuel-111/Book_Rental_Application',
-    liveLink: 'https://github.com/amanuel-111/Book_Rental_Application',
   }
 ];
