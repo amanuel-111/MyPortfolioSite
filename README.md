@@ -77,6 +77,3 @@ To run this project locally, follow these steps:
 - **LinkedIn:** [amanuel-tilahun](https://www.linkedin.com/in/amanuel-tilahun-03231226a)
 - **GitHub:** [@amanuel-111](https://github.com/amanuel-111)
 
-## License
-
-This project is open-source and available under the MIT License.
