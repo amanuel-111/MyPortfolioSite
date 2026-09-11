@@ -4,7 +4,7 @@ Personal portfolio website showcasing my full-stack development projects, techni
 
 ## About Me
 
-I am a Junior Full-Stack Developer and AI-Powered Web Developer based in Bahir Dar, Ethiopia. I am a recent graduate in Computer Science from Bahir Dar University with a strong interest in Full-stack web development, AI-assisted application development, Cybersecurity, IT infrastructure, and Networking.
+I am a Junior Full-Stack Developer and AI-Powered Web Developer based in Bahir Dar, Ethiopia. I am a recent graduate in Computer Science from Bahir Dar University with a strong interest in Full-stack web development, AI-assisted application development, Cybersecurity, IT infrastructure, and Networking, alongside a foundation in electronics maintenance.
 
 ## Skills
 
@@ -12,6 +12,7 @@ I am a Junior Full-Stack Developer and AI-Powered Web Developer based in Bahir D
 **Backend:** Node.js, Express.js, Python, REST APIs  
 **Database:** MySQL, PostgreSQL  
 **Other:** Git/GitHub, Linux, Networking, Cybersecurity fundamentals  
+**Hardware:** Electronics Maintenance (Hardware Diagnostics, Component Testing, Circuit Repair)  
 
 ## Featured Projects
 
@@ -36,14 +37,18 @@ A full-stack book rental management application for browsing, renting, and manag
 *Bahir Dar University*  
 2019 – 2025  
 
+**Level IV in Electronics Maintenance**  
+*Bahir Dar Polytechnic College*  
+Graduate  
+
 ## Certifications & Training
 
-- Gebeya Linux Server Administration
-- O'Reilly cybersecurity training
+- Frontend Engineering (React.js)
+- Linux Server Administration
+- Network Tech & Security
 - CCNA Starting Course Completion
 - CompTIA Network+ training
 - Cisco CCST IT Support
-- Cisco Networking Foundations
 - Cybersecurity for IT Professionals
 
 ## Getting Started
