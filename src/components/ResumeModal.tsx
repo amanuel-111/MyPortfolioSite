@@ -75,7 +75,7 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
               <User className="w-4 h-4" /> Objective
             </h3>
             <p className="leading-relaxed bg-slate-800/30 p-4 rounded-xl border border-slate-800/80 text-xs md:text-sm text-slate-200">
-              Recent graduate in Computer Science with a strong interest in Full-stack web development, AI-assisted application development, Cybersecurity, IT infrastructure, and Networking. Holds certifications in Linux Server Administration, Networking, and Cybersecurity. Focused on utilizing technology to build modern, scalable solutions and eager to contribute as a Junior Full-Stack Developer.
+              Recent graduate in Computer Science with a strong interest in Full-stack web development, AI-assisted application development, Cybersecurity, IT infrastructure, and Networking. Holds certifications in Linux Server Administration, Networking, Cybersecurity, and a foundation in electronics maintenance. Focused on utilizing technology to build modern, scalable solutions and eager to contribute as a Junior Full-Stack Developer or Junior Electronics Technician.
             </p>
           </div>
 
@@ -89,6 +89,13 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
                 <div>
                   <h4 className="font-bold text-white text-sm">Bachelor of Science in Computer Science</h4>
                   <p className="text-xs text-cyan-400 font-medium">Bahir Dar University</p>
+                </div>
+                <span className="text-xs font-mono text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md">Graduate</span>
+              </div>
+              <div className="p-4 bg-slate-800/40 rounded-xl border border-slate-800 flex justify-between items-start">
+                <div>
+                  <h4 className="font-bold text-white text-sm">Level IV in Electronics Maintenance</h4>
+                  <p className="text-xs text-cyan-400 font-medium">Bahir Dar Polytechnic College</p>
                 </div>
                 <span className="text-xs font-mono text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md">Graduate</span>
               </div>
@@ -119,6 +126,10 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
                   Network troubleshooting, Linux OS, Cybersecurity fundamentals, Git/GitHub
                 </p>
               </div>
+              <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800 space-y-1 md:col-span-2">
+                <span className="font-bold text-white text-xs block text-cyan-300">Electronics Maintenance</span>
+                <p className="text-slate-300">Basic hardware diagnostics, component testing, circuitry repair</p>
+              </div>
             </div>
           </div>
 
@@ -129,12 +140,12 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs">
               {[
-                "Gebeya Linux Server Administration",
-                "O'Reilly cybersecurity training",
+                "Gebeya Frontend Engineering (React.js)",
+                "Linux Server Administration",
+                "Network Tech & Security",
                 "CCNA Starting Course Completion",
                 "CompTIA Network+ training",
                 "Cisco CCST IT Support",
-                "Cisco Networking Foundations",
                 "Cybersecurity for IT Professionals"
               ].map((cert, idx) => (
                 <div key={idx} className="flex items-center gap-2 p-2.5 bg-slate-800/30 rounded-lg border border-slate-800">

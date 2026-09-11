@@ -8,7 +8,8 @@ interface HomePageProps {
 const roles = [
   'Junior Full-Stack Developer',
   'AI-Powered Web Developer',
-  'Computer Science Graduate'
+  'Computer Science Graduate',
+  'Junior Electronics Technician'
 ];
 
 const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
@@ -57,7 +58,7 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
 
             {/* Descriptive Bio */}
             <p className="text-slate-300 text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Junior Full-Stack Developer & recent Computer Science graduate. Passionate about building modern, AI-assisted web applications, exploring cybersecurity, and managing IT infrastructure.
+              Junior Full-Stack Developer & recent Computer Science graduate. Passionate about building modern, AI-assisted web applications, exploring cybersecurity, and managing IT infrastructure with a foundation in electronics maintenance.
             </p>
 
             {/* Quick Contact Chips */}

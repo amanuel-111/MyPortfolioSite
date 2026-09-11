@@ -28,10 +28,10 @@ function App() {
       {/* Main Content Area */}
       <main className="relative z-10">
         <HomePage onOpenResume={() => setIsResumeOpen(true)} />
+        <EducationPage />
         <ServicesSection />
         <SkillsPage />
         <ProjectsPage />
-        <EducationPage />
         <CertificationsPage />
         <ContactPage />
       </main>

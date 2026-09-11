@@ -7,10 +7,10 @@ interface HeaderProps {
 
 const navLinks = [
   { href: '#home', label: 'Home' },
+  { href: '#education', label: 'Education' },
   { href: '#services', label: 'Services' },
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
-  { href: '#education', label: 'Education' },
   { href: '#certifications', label: 'Certifications' },
   { href: '#contact', label: 'Contact' },
 ];

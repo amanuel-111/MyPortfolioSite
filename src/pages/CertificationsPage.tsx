@@ -1,24 +1,25 @@
 import React, { useState, useMemo } from 'react';
-import { Award, Search, CheckCircle2 } from 'lucide-react';
+import { Award, Search, CheckCircle2, ExternalLink } from 'lucide-react';
 
 interface Certification {
   id: string;
   title: string;
   issuer: 'O\'Reilly' | 'LinkedIn' | 'Gebeya';
-  category: 'Cybersecurity' | 'Networking' | 'Hardware & SysAdmin' | 'Graphics & Tech';
+  category: 'Cybersecurity' | 'Networking' | 'Hardware & SysAdmin' | 'Graphics & Tech' | 'Programming';
+  credentialUrl?: string;
 }
 
 const certificationsList: Certification[] = [
-  { id: '1', title: "Gebeya Linux Server Administration", issuer: "Gebeya", category: "Hardware & SysAdmin" },
-  { id: '2', title: "O'Reilly cybersecurity training", issuer: "O'Reilly", category: "Cybersecurity" },
-  { id: '3', title: "CCNA Starting Course Completion", issuer: "O'Reilly", category: "Networking" },
-  { id: '4', title: "CompTIA Network+ training", issuer: "O'Reilly", category: "Networking" },
-  { id: '5', title: "Cisco CCST IT Support", issuer: "O'Reilly", category: "Hardware & SysAdmin" },
-  { id: '6', title: "Cisco Networking Foundations", issuer: "LinkedIn", category: "Networking" },
-  { id: '7', title: "Cybersecurity for IT Professionals", issuer: "LinkedIn", category: "Cybersecurity" },
+  { id: '8', title: "Frontend Engineering (React.js)", issuer: "Gebeya", category: "Programming", credentialUrl: "https://uvljtyfpcvoddiiaydhv.supabase.co/storage/v1/object/public/lms/certificates/CERT-0286eb4a-1dd14833-1774433356118-gc9mc1l5a09.pdf" },
+  { id: '1', title: "Linux Server Administration", issuer: "Gebeya", category: "Hardware & SysAdmin", credentialUrl: "https://uvljtyfpcvoddiiaydhv.supabase.co/storage/v1/object/public/lms/certificates/CERT-50b02eed-1dd14833-1760521895358-t9gorarx1i.pdf" },
+  { id: '2', title: "Network Tech & Security", issuer: "O'Reilly", category: "Cybersecurity", credentialUrl: "https://www.credly.com/badges/5c027e61-3ad6-4f7b-a797-8cac9d466d60/public_url" },
+  { id: '3', title: "CCNA Starting Course Completion", issuer: "O'Reilly", category: "Networking", credentialUrl: "https://www.credly.com/badges/8f7f2177-2080-45da-982d-9dba136d82f0/public_url" },
+  { id: '4', title: "CompTIA Network+ training", issuer: "O'Reilly", category: "Networking", credentialUrl: "https://www.credly.com/badges/d83b3f9e-c82c-4996-a8df-c865f0580b2a/public_url" },
+  { id: '5', title: "Cisco CCST IT Support", issuer: "O'Reilly", category: "Hardware & SysAdmin", credentialUrl: "https://www.credly.com/badges/14f8957a-3907-49bd-b137-ddc5ea4be10f/public_url" },
+  { id: '7', title: "Cybersecurity for IT Professionals", issuer: "LinkedIn", category: "Cybersecurity", credentialUrl: "https://www.linkedin.com/learning/certificates/bf249e550a6ce5aedf4f989fa74044889342b8115c722a7d0960bcfe0dc47759" },
 ];
 
-const categories = ['All', 'Networking', 'Hardware & SysAdmin', 'Cybersecurity'];
+const categories = ['All', 'Networking', 'Hardware & SysAdmin', 'Cybersecurity', 'Programming'];
 
 const CertificationsPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -115,8 +116,18 @@ const CertificationsPage: React.FC = () => {
                   </h3>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-slate-800/80 text-[11px] font-medium text-slate-400">
-                  Verified Credential / Course Completion
+                <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-medium text-slate-400">
+                  <span>Verified Credential / Course Completion</span>
+                  {cert.credentialUrl && (
+                    <a
+                      href={cert.credentialUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-cyan-400 hover:text-cyan-300 transition-colors"
+                    >
+                      Credentials <ExternalLink className="w-3 h-3" />
+                    </a>
+                  )}
                 </div>
               </div>
             ))}

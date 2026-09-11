@@ -8,6 +8,7 @@ const ContactPage: React.FC = () => {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [emailError, setEmailError] = useState('');
 
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [copiedPhone, setCopiedPhone] = useState(false);
@@ -26,10 +27,39 @@ const ContactPage: React.FC = () => {
     setTimeout(() => setCopiedPhone(false), 2000);
   };
 
+  const validateEmail = (value: string) => {
+    if (!value.trim()) {
+      return 'Email address is required.';
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(value.trim())) {
+      return 'Please enter a valid email address.';
+    }
+    return '';
+  };
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+    if (emailError) {
+      setEmailError(validateEmail(e.target.value));
+    }
+  };
+
+  const handleEmailBlur = () => {
+    setEmailError(validateEmail(email));
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     
+    const currentEmailError = validateEmail(email);
+    if (currentEmailError) {
+      setEmailError(currentEmailError);
+      setIsSubmitting(false);
+      return;
+    }
+
     const form = e.currentTarget;
     const formData = new FormData(form);
     formData.append('_subject', subject || 'New message from portfolio visitor!');
@@ -184,11 +214,25 @@ const ContactPage: React.FC = () => {
                       id="email"
                       name="email"
                       value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="name@example.com"
-                      className="w-full px-4 py-3 bg-slate-900/90 border border-slate-800 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"
+                      onChange={handleEmailChange}
+                      onBlur={handleEmailBlur}
+                      placeholder="you@example.com"
+                      autoComplete="email"
+                      aria-invalid={!!emailError}
+                      aria-describedby={emailError ? "email-error" : undefined}
+                      className={`w-full px-4 py-3 bg-slate-900/90 border rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none transition-colors ${
+                        emailError 
+                          ? 'border-red-500/50 focus:border-red-500' 
+                          : 'border-slate-800 focus:border-cyan-500'
+                      }`}
                       required
                     />
+                    {emailError && (
+                      <p id="email-error" className="mt-1.5 text-xs text-red-400 font-medium flex items-center gap-1.5">
+                        <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block"></span>
+                        {emailError}
+                      </p>
+                    )}
                   </div>
                 </div>
 

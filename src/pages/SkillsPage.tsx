@@ -13,13 +13,15 @@ const skillBars: TechnicalSkill[] = [
   { name: 'Backend Development', level: 85, category: 'Programming', description: 'Node.js, Express.js, Python, REST APIs' },
   { name: 'IT & Networking', level: 80, category: 'Networking', description: 'Network troubleshooting, Linux, Cybersecurity fundamentals' },
   { name: 'Database Systems', level: 85, category: 'Database', description: 'MySQL, PostgreSQL' },
+  { name: 'Electronics Maintenance', level: 60, category: 'Electronics', description: 'Basic hardware troubleshooting, component-level diagnostics' },
 ];
 
 const skillTags = {
   frontend: ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS'],
   backend: ['Node.js', 'Express.js', 'Python', 'REST APIs'],
   networking: ['Network Troubleshooting', 'Linux OS', 'Cybersecurity fundamentals', 'CompTIA Network+'],
-  database: ['MySQL', 'PostgreSQL', 'SQL']
+  database: ['MySQL', 'PostgreSQL', 'SQL'],
+  electronics: ['Basic Soldering', 'Hardware Diagnostics', 'Circuit Repair', 'Component Testing']
 };
 
 const softSkills = [
@@ -150,6 +152,23 @@ const SkillsPage: React.FC = () => {
               <div className="flex flex-wrap gap-2">
                 {skillTags.networking.map((tag, i) => (
                   <span key={i} className="px-3 py-1 text-xs font-mono text-indigo-200 bg-slate-800/80 rounded-lg border border-slate-700/60">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Electronics & Hardware */}
+            <div className="glass-card rounded-2xl p-6 border border-slate-800 md:col-span-2 lg:col-span-1">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2.5 rounded-xl bg-orange-500/10 text-orange-400 border border-orange-500/20">
+                  <Cpu className="w-5 h-5" />
+                </div>
+                <h4 className="font-bold text-white text-base">Electronics Maintenance</h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skillTags.electronics.map((tag, i) => (
+                  <span key={i} className="px-3 py-1 text-xs font-mono text-orange-200 bg-slate-800/80 rounded-lg border border-slate-700/60">
                     {tag}
                   </span>
                 ))}

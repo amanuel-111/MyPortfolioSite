@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, BookOpen, CheckCircle2 } from 'lucide-react';
+import { GraduationCap, BookOpen, CheckCircle2, Cpu } from 'lucide-react';
 
 const educationData = [
   {
@@ -14,6 +14,20 @@ const educationData = [
       'Database Systems & SQL',
       'Operating Systems & Networking',
       'Object-Oriented Programming (Java, C++)'
+    ]
+  },
+  {
+    institution: 'Bahir Dar Polytechnic College',
+    location: 'Bahir Dar, Ethiopia',
+    degree: 'Level IV in Electronics Maintenance',
+    type: 'Technical & Vocational Education',
+    icon: Cpu,
+    description: 'Practical training and certification in electronics maintenance, hardware troubleshooting, and systems repair.',
+    highlights: [
+      'Electronics Circuitry',
+      'Hardware Troubleshooting',
+      'System Repair & Maintenance',
+      'Component-Level Diagnostics'
     ]
   }
 ];
