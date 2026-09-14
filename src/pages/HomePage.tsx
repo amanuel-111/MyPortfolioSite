@@ -44,13 +44,13 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
             </div>
 
             {/* Main Heading */}
-            <div className="space-y-2">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-none">
+            <div className="space-y-2 w-full overflow-hidden">
+              <h1 className="text-[22px] min-[375px]:text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-none whitespace-nowrap">
                 Hi, I'm <span className="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Amanuel Tilahun</span>
               </h1>
               
-              <div className="h-10 flex items-center justify-center lg:justify-start">
-                <span className="text-xl sm:text-2xl font-semibold text-cyan-400 font-mono transition-all">
+              <div className="h-10 flex items-center justify-center lg:justify-start overflow-hidden">
+                <span className="text-sm min-[375px]:text-base sm:text-2xl font-semibold text-cyan-400 font-mono transition-all whitespace-nowrap">
                   &gt; {roles[currentRoleIndex]}
                 </span>
               </div>
@@ -62,56 +62,67 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
             </p>
 
             {/* Quick Contact Chips */}
-            <div className="flex flex-wrap justify-center lg:justify-start items-center gap-3 pt-2">
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 text-xs text-slate-300">
-                <MapPin className="w-3.5 h-3.5 text-cyan-400" /> Bahir Dar | Ethiopia
+            <div className="flex flex-col lg:flex-row lg:flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+              {/* Row 1 */}
+              <div className="flex flex-row items-center justify-center gap-2 sm:gap-3 w-full lg:w-auto">
+                <div className="whitespace-nowrap flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 text-[10px] sm:text-xs text-slate-300">
+                  <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-cyan-400" /> Bahir Dar | Ethiopia
+                </div>
+                <a
+                  href="mailto:amatila111@gmail.com"
+                  className="whitespace-nowrap flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 text-[10px] sm:text-xs text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
+                >
+                  <Mail className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-cyan-400" /> amatila111@gmail.com
+                </a>
               </div>
-              <a
-                href="mailto:amatila111@gmail.com"
-                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 text-xs text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
-              >
-                <Mail className="w-3.5 h-3.5 text-cyan-400" /> amatila111@gmail.com
-              </a>
-              <a
-                href="tel:0932158839"
-                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 text-xs text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
-              >
-                <Phone className="w-3.5 h-3.5 text-cyan-400" /> 0932158839
-              </a>
-              <a
-                href="https://www.linkedin.com/in/amanuel-tilahun-03231226a"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 text-xs text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
-              >
-                <Linkedin className="w-3.5 h-3.5 text-cyan-400" /> LinkedIn Profile
-              </a>
+              {/* Row 2 */}
+              <div className="flex flex-row items-center justify-center gap-2 sm:gap-3 w-full lg:w-auto">
+                <a
+                  href="tel:0932158839"
+                  className="whitespace-nowrap flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 text-[10px] sm:text-xs text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
+                >
+                  <Phone className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-cyan-400" /> 0932158839
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/amanuel-tilahun-03231226a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="whitespace-nowrap flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-800 text-[10px] sm:text-xs text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
+                >
+                  <Linkedin className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-cyan-400" /> LinkedIn Profile
+                </a>
+              </div>
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
-              <a
-                href="#projects"
-                className="flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold bg-cyan-400 hover:bg-cyan-300 text-slate-950 transition-all shadow-xl shadow-cyan-500/20 hover:scale-105"
-              >
-                Explore Projects <ArrowRight className="w-4 h-4" />
-              </a>
-
-              {onOpenResume && (
-                <button
-                  onClick={onOpenResume}
-                  className="flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold bg-slate-800 hover:bg-slate-700 text-white transition-all border border-slate-700 hover:scale-105"
+            <div className="flex flex-col lg:flex-row lg:flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-4">
+              {/* Row 3 */}
+              <div className="flex flex-row items-center justify-center gap-2 sm:gap-4 w-full lg:w-auto">
+                <a
+                  href="#projects"
+                  className="whitespace-nowrap flex items-center gap-1.5 sm:gap-2 px-3 sm:px-6 py-2 sm:py-3 rounded-xl text-[11px] sm:text-sm font-bold bg-cyan-400 hover:bg-cyan-300 text-slate-950 transition-all shadow-xl shadow-cyan-500/20 hover:scale-105"
                 >
-                  <FileText className="w-4 h-4 text-cyan-400" /> View CV Summary
-                </button>
-              )}
+                  Explore Projects <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
+                </a>
 
-              <a
-                href="#contact"
-                className="flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-white transition-all border border-slate-800"
-              >
-                Contact Me
-              </a>
+                {onOpenResume && (
+                  <button
+                    onClick={onOpenResume}
+                    className="whitespace-nowrap flex items-center gap-1.5 sm:gap-2 px-3 sm:px-6 py-2 sm:py-3 rounded-xl text-[11px] sm:text-sm font-bold bg-slate-800 hover:bg-slate-700 text-white transition-all border border-slate-700 hover:scale-105"
+                  >
+                    <FileText className="w-3 h-3 sm:w-4 sm:h-4 text-cyan-400" /> View CV Summary
+                  </button>
+                )}
+              </div>
+              {/* Row 4 */}
+              <div className="flex flex-row items-center justify-center w-full lg:w-auto">
+                <a
+                  href="#contact"
+                  className="whitespace-nowrap flex items-center gap-1.5 sm:gap-2 px-6 py-2 sm:py-3 rounded-xl text-[11px] sm:text-sm font-bold bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-white transition-all border border-slate-800"
+                >
+                  Contact Me
+                </a>
+              </div>
             </div>
           </div>
 
