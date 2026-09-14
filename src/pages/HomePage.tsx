@@ -57,7 +57,7 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
             </div>
 
             {/* Descriptive Bio */}
-            <p className="text-slate-300 text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-slate-300 text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 text-justify">
               Junior Full-Stack Developer & recent Computer Science graduate. Passionate about building modern, AI-assisted web applications, exploring cybersecurity, and managing IT infrastructure with a foundation in electronics maintenance.
             </p>
 
@@ -138,7 +138,7 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
                     </div>
                     <div>
                       <h4 className="text-xs font-bold text-white">B.Sc Computer Science</h4>
-                      <p className="text-[10px] text-cyan-400">Bahir Dar University</p>
+                      <p className="text-[10px] text-cyan-400 text-justify">Bahir Dar University</p>
                     </div>
                   </div>
                   <CheckCircle2 className="w-4 h-4 text-emerald-400" />

@@ -35,7 +35,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           <h2 className="text-2xl md:text-3xl font-extrabold text-white">
             {project.title}
           </h2>
-          <p className="text-cyan-400 font-medium text-sm md:text-base mt-1">
+          <p className="text-cyan-400 font-medium text-sm md:text-base mt-1 text-justify">
             {project.subtitle}
           </p>
         </div>
@@ -54,7 +54,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           <h3 className="text-lg font-bold text-white flex items-center gap-2">
             <Layers className="w-5 h-5 text-cyan-400" /> System Architecture & Overview
           </h3>
-          <p>{project.detailedOverview}</p>
+          <p className="text-justify">{project.detailedOverview}</p>
         </div>
 
         {/* Key Features */}

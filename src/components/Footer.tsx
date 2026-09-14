@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
               </span>
             </div>
 
-            <p className="text-slate-400 max-w-sm mt-4 md:mt-0 text-sm leading-relaxed">
+            <p className="text-slate-400 max-w-sm mt-4 md:mt-0 text-sm leading-relaxed text-justify">
               Computer Science graduate with training in electronics equipment servicing, networking, cybersecurity, and full-stack web development.
             </p>
 
@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>&copy; {new Date().getFullYear()} Amanuel Tilahun. All rights reserved.</p>
+          <p className="text-justify">&copy; {new Date().getFullYear()} Amanuel Tilahun. All rights reserved.</p>
 
           <div className="flex items-center space-x-4">
             <span>Built with React, TypeScript & Tailwind CSS</span>

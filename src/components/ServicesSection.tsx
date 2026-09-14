@@ -46,7 +46,7 @@ const ServicesSection: React.FC = () => {
           <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
             Comprehensive <span className="text-cyan-400">Technical Expertise</span>
           </h2>
-          <p className="mt-4 text-slate-400 text-base md:text-lg">
+          <p className="mt-4 text-slate-400 text-base md:text-lg text-justify">
             Bridging full-stack software engineering, AI integration, network management, and cybersecurity to provide robust tech solutions.
           </p>
         </div>
@@ -67,11 +67,11 @@ const ServicesSection: React.FC = () => {
                   <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors mb-1">
                     {service.title}
                   </h3>
-                  <p className="text-xs font-semibold text-cyan-400 uppercase tracking-wider mb-4">
+                  <p className="text-xs font-semibold text-cyan-400 uppercase tracking-wider mb-4 text-justify">
                     {service.subtitle}
                   </p>
 
-                  <p className="text-slate-300 text-sm leading-relaxed mb-6">
+                  <p className="text-slate-300 text-sm leading-relaxed mb-6 text-justify">
                     {service.description}
                   </p>
                 </div>

@@ -48,7 +48,7 @@ const SkillsPage: React.FC = () => {
           <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
             Technical & <span className="text-cyan-400">Professional Competencies</span>
           </h2>
-          <p className="mt-4 text-slate-400 text-base md:text-lg">
+          <p className="mt-4 text-slate-400 text-base md:text-lg text-justify">
             Full-stack web development, database fundamentals, IT networking, and cybersecurity expertise.
           </p>
         </div>
@@ -65,7 +65,7 @@ const SkillsPage: React.FC = () => {
                 <div className="flex items-center justify-between">
                   <div>
                     <h4 className="font-bold text-white text-sm">{skill.name}</h4>
-                    <p className="text-[11px] text-slate-400">{skill.description}</p>
+                    <p className="text-[11px] text-slate-400 text-justify">{skill.description}</p>
                   </div>
                   <span className="text-xs font-mono font-bold text-cyan-400 bg-slate-900 px-2.5 py-1 rounded-md border border-slate-800">
                     {skill.level}%

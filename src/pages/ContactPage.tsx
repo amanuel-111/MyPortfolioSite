@@ -101,7 +101,7 @@ const ContactPage: React.FC = () => {
           <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
             Let's Connect & <span className="text-cyan-400">Collaborate</span>
           </h2>
-          <p className="mt-4 text-slate-400 text-base md:text-lg">
+          <p className="mt-4 text-slate-400 text-base md:text-lg text-justify">
             Have a project, job opportunity, or technical inquiry? Feel free to reach out via message or direct contact.
           </p>
         </div>
@@ -161,7 +161,7 @@ const ContactPage: React.FC = () => {
               </div>
               <div>
                 <h4 className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Primary Location</h4>
-                <p className="text-sm font-bold text-white">Bahir Dar, Ethiopia</p>
+                <p className="text-sm font-bold text-white text-justify">Bahir Dar, Ethiopia</p>
               </div>
             </div>
 
@@ -228,7 +228,7 @@ const ContactPage: React.FC = () => {
                       required
                     />
                     {emailError && (
-                      <p id="email-error" className="mt-1.5 text-xs text-red-400 font-medium flex items-center gap-1.5">
+                      <p id="email-error" className="mt-1.5 text-xs text-red-400 font-medium flex items-center gap-1.5 text-justify">
                         <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block"></span>
                         {emailError}
                       </p>

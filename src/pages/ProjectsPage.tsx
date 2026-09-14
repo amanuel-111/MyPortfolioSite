@@ -27,7 +27,7 @@ const ProjectsPage: React.FC = () => {
           <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
             Featured <span className="text-cyan-400">Software Projects</span>
           </h2>
-          <p className="mt-4 text-slate-400 text-base md:text-lg">
+          <p className="mt-4 text-slate-400 text-base md:text-lg text-justify">
             Demonstrating full-stack web development, AI integration, logistics platform design, and database systems.
           </p>
         </div>

@@ -44,7 +44,7 @@ const EducationPage: React.FC = () => {
           <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
             Education & <span className="text-cyan-400">Qualifications</span>
           </h2>
-          <p className="mt-4 text-slate-400 text-base md:text-lg">
+          <p className="mt-4 text-slate-400 text-base md:text-lg text-justify">
             Solid foundation in software engineering, database systems, and networking.
           </p>
         </div>
@@ -71,11 +71,11 @@ const EducationPage: React.FC = () => {
                   <h3 className="text-2xl font-bold text-white mb-1">
                     {edu.institution}
                   </h3>
-                  <p className="text-sm font-semibold text-cyan-400 mb-4">
+                  <p className="text-sm font-semibold text-cyan-400 mb-4 text-justify">
                     {edu.degree}
                   </p>
 
-                  <p className="text-slate-300 text-sm leading-relaxed mb-6">
+                  <p className="text-slate-300 text-sm leading-relaxed mb-6 text-justify">
                     {edu.description}
                   </p>
                 </div>

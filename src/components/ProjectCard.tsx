@@ -29,11 +29,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelect }) => {
         <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-1">
           {project.title}
         </h3>
-        <p className="text-xs text-cyan-400 font-medium mb-3">
+        <p className="text-xs text-cyan-400 font-medium mb-3 text-justify">
           {project.subtitle}
         </p>
 
-        <p className="text-slate-300 text-sm line-clamp-3 mb-6 leading-relaxed">
+        <p className="text-slate-300 text-sm line-clamp-3 mb-6 leading-relaxed text-justify">
           {project.description}
         </p>
 
