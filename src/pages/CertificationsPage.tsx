@@ -41,13 +41,13 @@ const CertificationsPage: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
-            <Award className="w-4 h-4" /> Professional Qualifications
+            <Award className="w-4 h-4" /> Technical Training & Courses
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
-            Industry <span className="text-cyan-400">Certifications</span>
+            Technical <span className="text-cyan-400">Training & Certifications</span>
           </h2>
           <p className="mt-4 text-slate-400 text-base md:text-lg text-justify">
-            Holds 7 professional certifications and course completions across Networking, Cybersecurity, Linux Systems, and IT Support.
+            Completed 7 technical training courses and certifications in Networking, Linux Server Administration, Cybersecurity fundamentals, and IT Support.
           </p>
         </div>
 

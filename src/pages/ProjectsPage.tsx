@@ -25,10 +25,10 @@ const ProjectsPage: React.FC = () => {
             <Layers className="w-4 h-4" /> Portfolio Highlights
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
-            Featured <span className="text-cyan-400">Software Projects</span>
+            Featured <span className="text-cyan-400">Practical Projects</span>
           </h2>
           <p className="mt-4 text-slate-400 text-base md:text-lg text-justify">
-            Demonstrating full-stack web development, AI integration, logistics platform design, and database systems.
+            Hands-on projects demonstrating practical skills in full-stack web development, REST APIs, and database management.
           </p>
         </div>
 

@@ -52,7 +52,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
         {/* Project Description */}
         <div className="mb-6 space-y-3 text-slate-300 leading-relaxed text-sm md:text-base">
           <h3 className="text-lg font-bold text-white flex items-center gap-2">
-            <Layers className="w-5 h-5 text-cyan-400" /> System Architecture & Overview
+            <Layers className="w-5 h-5 text-cyan-400" /> Project Overview & Implementation
           </h3>
           <p className="text-justify">{project.detailedOverview}</p>
         </div>

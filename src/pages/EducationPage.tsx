@@ -5,29 +5,29 @@ const educationData = [
   {
     institution: 'Bahir Dar University',
     location: 'Bahir Dar, Ethiopia',
-    degree: 'Bachelor of Science in Computer Science',
+    degree: 'BSc Computer Science (2019–2025)',
     type: 'Higher Education Degree',
     icon: GraduationCap,
-    description: 'Comprehensive study of computer science fundamentals, software development methodologies, database systems, networking principles, and computer architecture.',
+    description: 'Foundational study of computer science principles, software development methodologies, database systems, operating systems, networking fundamentals, and computer architecture.',
     highlights: [
-      'Software Development & Algorithms',
+      'Software Development Fundamentals & Algorithms',
       'Database Systems & SQL',
-      'Operating Systems & Networking',
+      'Operating Systems & Networking Principles',
       'Object-Oriented Programming (Java, C++)'
     ]
   },
   {
     institution: 'Bahir Dar Polytechnic College',
     location: 'Bahir Dar, Ethiopia',
-    degree: 'Level IV in Electronics Maintenance',
-    type: 'Technical & Vocational Education',
+    degree: 'Level IV TVET — Electrical Electronics Equipment Servicing Management',
+    type: 'Technical & Vocational Education (TVET)',
     icon: Cpu,
-    description: 'Practical training and certification in electronics maintenance, hardware troubleshooting, and systems repair.',
+    description: 'Technical and vocational training in electrical and electronic equipment servicing management, hardware fault diagnosis, component testing, and equipment maintenance.',
     highlights: [
-      'Electronics Circuitry',
-      'Hardware Troubleshooting',
-      'System Repair & Maintenance',
-      'Component-Level Diagnostics'
+      'Electrical & Electronic Equipment Servicing',
+      'Hardware Fault Diagnosis & Troubleshooting',
+      'Component-Level Diagnostics & Testing',
+      'Equipment Servicing Management'
     ]
   }
 ];
@@ -45,7 +45,7 @@ const EducationPage: React.FC = () => {
             Education & <span className="text-cyan-400">Qualifications</span>
           </h2>
           <p className="mt-4 text-slate-400 text-base md:text-lg text-justify">
-            Solid foundation in software engineering, database systems, and networking.
+            Academic degree in computer science and technical vocational training in electrical and electronic equipment servicing.
           </p>
         </div>
 

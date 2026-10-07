@@ -9,19 +9,19 @@ interface TechnicalSkill {
 }
 
 const skillBars: TechnicalSkill[] = [
-  { name: 'Frontend Development', level: 90, category: 'Programming', description: 'React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS' },
-  { name: 'Backend Development', level: 85, category: 'Programming', description: 'Node.js, Express.js, Python, REST APIs' },
-  { name: 'IT & Networking', level: 80, category: 'Networking', description: 'Network troubleshooting, Linux, Cybersecurity fundamentals' },
-  { name: 'Database Systems', level: 85, category: 'Database', description: 'MySQL, PostgreSQL' },
-  { name: 'Electronics Maintenance', level: 60, category: 'Electronics', description: 'Basic hardware troubleshooting, component-level diagnostics' },
+  { name: 'Frontend Development', level: 75, category: 'Programming', description: 'React, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS' },
+  { name: 'Backend Development', level: 70, category: 'Programming', description: 'Node.js, Express.js, REST APIs, foundational Python' },
+  { name: 'IT Support & Networking', level: 75, category: 'Networking', description: 'TCP/IP, subnetting, network troubleshooting, Linux, cybersecurity fundamentals' },
+  { name: 'Database Systems', level: 70, category: 'Database', description: 'MySQL, PostgreSQL, SQL queries' },
+  { name: 'Hardware & Electronics Servicing', level: 65, category: 'Electronics', description: 'Hardware diagnostics, equipment servicing, fault testing' },
 ];
 
 const skillTags = {
-  frontend: ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS'],
-  backend: ['Node.js', 'Express.js', 'Python', 'REST APIs'],
-  networking: ['Network Troubleshooting', 'Linux OS', 'Cybersecurity fundamentals', 'CompTIA Network+'],
+  frontend: ['React', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS'],
+  backend: ['Node.js', 'Express.js', 'REST APIs', 'Python'],
+  networking: ['Network Troubleshooting', 'TCP/IP', 'Subnetting Fundamentals', 'Linux CLI', 'Cybersecurity Fundamentals'],
   database: ['MySQL', 'PostgreSQL', 'SQL'],
-  electronics: ['Basic Soldering', 'Hardware Diagnostics', 'Circuit Repair', 'Component Testing']
+  electronics: ['Hardware Diagnostics', 'Fault Diagnosis', 'Equipment Servicing', 'Component Testing']
 };
 
 const softSkills = [
@@ -31,7 +31,7 @@ const softSkills = [
 ];
 
 const languages = [
-  { name: 'Amharic', level: 'Native proficiency' },
+  { name: 'Amharic', level: 'Native' },
   { name: 'English', level: 'Basic working proficiency' }
 ];
 
@@ -46,10 +46,10 @@ const SkillsPage: React.FC = () => {
             <Cpu className="w-4 h-4" /> Technical & Soft Skills
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
-            Technical & <span className="text-cyan-400">Professional Competencies</span>
+            Technical Skills & <span className="text-cyan-400">Competencies</span>
           </h2>
           <p className="mt-4 text-slate-400 text-base md:text-lg text-justify">
-            Full-stack web development, database fundamentals, IT networking, and cybersecurity expertise.
+            Foundational knowledge in full-stack web development, database systems, IT networking, and hardware troubleshooting.
           </p>
         </div>
 
@@ -164,7 +164,7 @@ const SkillsPage: React.FC = () => {
                 <div className="p-2.5 rounded-xl bg-orange-500/10 text-orange-400 border border-orange-500/20">
                   <Cpu className="w-5 h-5" />
                 </div>
-                <h4 className="font-bold text-white text-base">Electronics Maintenance</h4>
+                <h4 className="font-bold text-white text-base">Hardware & Electronics Servicing</h4>
               </div>
               <div className="flex flex-wrap gap-2">
                 {skillTags.electronics.map((tag, i) => (

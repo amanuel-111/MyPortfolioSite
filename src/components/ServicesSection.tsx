@@ -4,31 +4,31 @@ import { Code2, Network, Wrench, ShieldCheck, Cpu } from 'lucide-react';
 const services = [
   {
     icon: Code2,
-    title: 'Full-Stack Software Engineering',
-    subtitle: 'Web Apps, APIs & Modern Solutions',
-    description: 'Designing and building scalable web applications using React, TypeScript, Node.js, PHP, and modern database architectures.',
-    tags: ['React', 'TypeScript', 'Node.js', 'PHP', 'REST APIs', 'SQL']
+    title: 'Junior Full-Stack Development',
+    subtitle: 'Web Apps, REST APIs & Practical Solutions',
+    description: 'Building practical web applications and REST APIs using React, JavaScript, Node.js, and SQL databases through hands-on project work.',
+    tags: ['React', 'JavaScript', 'TypeScript', 'Node.js', 'Express.js', 'SQL']
   },
   {
     icon: Network,
-    title: 'Network Engineering & Security',
-    subtitle: 'Infrastructure & Defense Basics',
-    description: 'Configuring routers, switches, subnetting, TCP/IP networking, network security fundamentals, and troubleshooting corporate connectivity.',
-    tags: ['Cisco CCNA', 'Network+', 'TCP/IP', 'Switching & Routing', 'Firewalls']
+    title: 'Networking & Network Support',
+    subtitle: 'TCP/IP, Routing & Security Fundamentals',
+    description: 'Working with TCP/IP, IPv4 addressing, subnetting fundamentals, switching and routing concepts, network troubleshooting, and basic network security.',
+    tags: ['TCP/IP', 'OSI Model', 'Subnetting', 'Routing & Switching', 'Network Security']
   },
   {
     icon: Wrench,
-    title: 'AI-Assisted Application Development',
-    subtitle: 'Smart Features & Integration',
-    description: 'Leveraging AI APIs and models to build intelligent, context-aware web applications and personalized user experiences.',
-    tags: ['OpenAI API', 'LLM Integration', 'Prompt Engineering', 'AI Chatbots']
+    title: 'Web Development & API Integration',
+    subtitle: 'UI Components & Practical Features',
+    description: 'Integrating external APIs, building interactive UI components, and developing functional web applications with modern libraries and tools.',
+    tags: ['API Integration', 'UI Components', 'Responsive Design', 'Git / GitHub', 'Postman']
   },
   {
     icon: ShieldCheck,
-    title: 'IT Support & Systems Administration',
-    subtitle: 'Help Desk & Workstation Care',
-    description: 'Providing comprehensive IT troubleshooting, OS installations (Windows/Linux), peripheral configuration, and end-user tech support.',
-    tags: ['Linux OS', 'Windows Server', 'PC Diagnostics', 'Hardware Upgrades', 'Help Desk']
+    title: 'IT Support & Hardware Troubleshooting',
+    subtitle: 'Help Desk, Hardware & OS Support',
+    description: 'Providing hardware fault diagnosis, PC and peripheral troubleshooting, OS installations (Windows/Linux), software setup, and basic user assistance.',
+    tags: ['Hardware Troubleshooting', 'Windows Support', 'Linux CLI', 'Help Desk', 'PC Maintenance']
   }
 ];
 
@@ -41,13 +41,13 @@ const ServicesSection: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
-            <Cpu className="w-4 h-4" /> Core Capabilities
+            <Cpu className="w-4 h-4" /> Core Technical Focus
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
-            Comprehensive <span className="text-cyan-400">Technical Expertise</span>
+            Technical Skills & <span className="text-cyan-400">Focus Areas</span>
           </h2>
           <p className="mt-4 text-slate-400 text-base md:text-lg text-justify">
-            Bridging full-stack software engineering, AI integration, network management, and cybersecurity to provide robust tech solutions.
+            Foundational knowledge and hands-on project experience across IT support, networking fundamentals, cybersecurity basics, and full-stack web development.
           </p>
         </div>
 

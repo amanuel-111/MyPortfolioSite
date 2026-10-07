@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             </div>
 
             <p className="text-slate-400 max-w-sm mt-4 md:mt-0 text-sm leading-relaxed text-justify">
-              Computer Science graduate with training in electronics equipment servicing, networking, cybersecurity, and full-stack web development.
+              Computer Science graduate with foundational knowledge and hands-on project experience in IT support, networking, cybersecurity fundamentals, and full-stack web development.
             </p>
 
             <div className="flex items-center space-x-3 pt-2">
@@ -72,13 +72,13 @@ const Footer: React.FC = () => {
                 <a href="#home" className="text-slate-400 hover:text-cyan-400 transition-colors">Home Overview</a>
               </li>
               <li>
-                <a href="#services" className="text-slate-400 hover:text-cyan-400 transition-colors">Core Capabilities</a>
+                <a href="#services" className="text-slate-400 hover:text-cyan-400 transition-colors">Technical Focus</a>
               </li>
               <li>
                 <a href="#skills" className="text-slate-400 hover:text-cyan-400 transition-colors">Technical Skills</a>
               </li>
               <li>
-                <a href="#projects" className="text-slate-400 hover:text-cyan-400 transition-colors">Featured Projects</a>
+                <a href="#projects" className="text-slate-400 hover:text-cyan-400 transition-colors">Practical Projects</a>
               </li>
               <li>
                 <a href="#education" className="text-slate-400 hover:text-cyan-400 transition-colors">Education</a>

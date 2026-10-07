@@ -6,10 +6,10 @@ interface HomePageProps {
 }
 
 const roles = [
-  'Junior Full-Stack Developer',
-  'AI-Powered Web Developer',
+  'Entry-Level IT & Full-Stack Developer',
   'Computer Science Graduate',
-  'Junior Electronics Technician'
+  'IT Support & Network Trainee',
+  'Junior Full-Stack Developer'
 ];
 
 const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
@@ -58,7 +58,7 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
 
             {/* Descriptive Bio */}
             <p className="text-slate-300 text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 text-justify">
-              Junior Full-Stack Developer & recent Computer Science graduate. Passionate about building modern, AI-assisted web applications, exploring cybersecurity, and managing IT infrastructure with a foundation in electronics maintenance.
+              Computer Science graduate with foundational knowledge and hands-on project experience in IT support, computer hardware, networking, Linux, cybersecurity fundamentals, and full-stack web development. Eager to learn, adapt, and contribute to entry-level IT and software roles.
             </p>
 
             {/* Quick Contact Chips */}
@@ -148,8 +148,8 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
                       <GraduationCap className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-bold text-white">B.Sc Computer Science</h4>
-                      <p className="text-[10px] text-cyan-400 text-justify">Bahir Dar University</p>
+                      <h4 className="text-xs font-bold text-white">BSc Computer Science</h4>
+                      <p className="text-[10px] text-cyan-400 text-justify">Bahir Dar University (2019–2025)</p>
                     </div>
                   </div>
                   <CheckCircle2 className="w-4 h-4 text-emerald-400" />
@@ -163,20 +163,20 @@ const HomePage: React.FC<HomePageProps> = ({ onOpenResume }) => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-10 border-t border-slate-800/80">
           <div className="glass-card rounded-2xl p-5 text-center border border-slate-800">
             <div className="text-3xl font-extrabold text-white mb-1">7</div>
-            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Training & Certifications</div>
+            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Technical Training & Certs</div>
             <div className="text-[11px] text-slate-400 mt-1">Networking, CyberSec & Systems</div>
           </div>
 
           <div className="glass-card rounded-2xl p-5 text-center border border-slate-800">
             <div className="text-3xl font-extrabold text-white mb-1">3</div>
-            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Full-Stack Projects</div>
-            <div className="text-[11px] text-slate-400 mt-1">AI, Logistics & Rental Apps</div>
+            <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Practical Projects</div>
+            <div className="text-[11px] text-slate-400 mt-1">Full-Stack & Web Applications</div>
           </div>
 
           <div className="glass-card rounded-2xl p-5 text-center border border-slate-800">
             <div className="text-3xl font-extrabold text-white mb-1">1</div>
             <div className="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Degree</div>
-            <div className="text-[11px] text-slate-400 mt-1">B.Sc Computer Science</div>
+            <div className="text-[11px] text-slate-400 mt-1">BSc Computer Science (2019–2025)</div>
           </div>
 
           <div className="glass-card rounded-2xl p-5 text-center border border-slate-800">

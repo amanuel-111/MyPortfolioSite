@@ -50,7 +50,7 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
             <div>
               <h1 className="text-2xl font-bold text-white tracking-wide">AMANUEL TILAHUN</h1>
               <p className="text-cyan-400 font-medium mt-0.5 text-xs md:text-sm text-justify">
-                Junior Full-Stack Developer & AI-Powered Web Developer
+                Computer Science Graduate | Entry-Level IT Support, Networking & Software Development
               </p>
             </div>
             <div className="space-y-1.5 text-xs text-slate-400 shrink-0">
@@ -72,11 +72,23 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
           {/* Objective */}
           <div>
             <h3 className="text-sm font-bold text-cyan-400 uppercase tracking-wider mb-2 flex items-center gap-2">
-              <User className="w-4 h-4" /> Objective
+              <User className="w-4 h-4" /> Career Objective
             </h3>
             <p className="leading-relaxed bg-slate-800/30 p-4 rounded-xl border border-slate-800/80 text-xs md:text-sm text-slate-200 text-justify">
-              Recent graduate in Computer Science with a strong interest in Full-stack web development, AI-assisted application development, Cybersecurity, IT infrastructure, and Networking. Holds certifications in Linux Server Administration, Networking, Cybersecurity, and a foundation in electronics maintenance. Focused on utilizing technology to build modern, scalable solutions and eager to contribute as a Junior Full-Stack Developer or Junior Electronics Technician.
+              Computer Science graduate with foundational knowledge and hands-on project experience in IT support, computer hardware, networking, Linux, cybersecurity fundamentals, and full-stack web development. Eager to apply practical skills, learn continuously, and contribute effectively to entry-level IT, technical support, and software roles.
             </p>
+          </div>
+
+          {/* Career Interests */}
+          <div>
+            <h3 className="text-sm font-bold text-cyan-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4" /> Career Interests & Target Roles
+            </h3>
+            <div className="bg-slate-800/30 p-4 rounded-xl border border-slate-800/80">
+              <p className="leading-relaxed text-xs text-slate-300 text-justify">
+                IT Support • Help Desk / Technical Support • IT Officer / IT Trainee • Network Support • Junior Network Administrator • Application Support • Junior Cybersecurity • Junior QA / Software Testing • Junior Full-Stack / Backend Development • Business & Application Support • IT Infrastructure • Hardware & Technical Support
+              </p>
+            </div>
           </div>
 
           {/* Education */}
@@ -87,14 +99,14 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
             <div className="space-y-3">
               <div className="p-4 bg-slate-800/40 rounded-xl border border-slate-800 flex justify-between items-start">
                 <div>
-                  <h4 className="font-bold text-white text-sm">Bachelor of Science in Computer Science</h4>
-                  <p className="text-xs text-cyan-400 font-medium text-justify">Bahir Dar University</p>
+                  <h4 className="font-bold text-white text-sm">BSc Computer Science</h4>
+                  <p className="text-xs text-cyan-400 font-medium text-justify">Bahir Dar University (2019–2025)</p>
                 </div>
                 <span className="text-xs font-mono text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md">Graduate</span>
               </div>
               <div className="p-4 bg-slate-800/40 rounded-xl border border-slate-800 flex justify-between items-start">
                 <div>
-                  <h4 className="font-bold text-white text-sm">Level IV in Electronics Maintenance</h4>
+                  <h4 className="font-bold text-white text-sm">Level IV TVET — Electrical Electronics Equipment Servicing Management</h4>
                   <p className="text-xs text-cyan-400 font-medium text-justify">Bahir Dar Polytechnic College</p>
                 </div>
                 <span className="text-xs font-mono text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md">Graduate</span>
@@ -110,25 +122,25 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
               <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800 space-y-1">
                 <span className="font-bold text-white text-xs block text-cyan-300">Frontend Development</span>
-                <p className="text-slate-300 text-justify">React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS</p>
+                <p className="text-slate-300 text-justify">React, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS</p>
               </div>
               <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800 space-y-1">
                 <span className="font-bold text-white text-xs block text-cyan-300">Backend Development</span>
-                <p className="text-slate-300 text-justify">Node.js, Express.js, Python, REST APIs</p>
+                <p className="text-slate-300 text-justify">Node.js, Express.js, REST APIs, foundational Python</p>
               </div>
               <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800 space-y-1">
                 <span className="font-bold text-white text-xs block text-cyan-300">Database Systems</span>
-                <p className="text-slate-300 text-justify">MySQL, PostgreSQL</p>
+                <p className="text-slate-300 text-justify">MySQL, PostgreSQL, SQL</p>
               </div>
               <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800 space-y-1">
-                <span className="font-bold text-white text-xs block text-cyan-300">IT & Networking</span>
+                <span className="font-bold text-white text-xs block text-cyan-300">IT Support & Networking</span>
                 <p className="text-slate-300 text-justify">
-                  Network troubleshooting, Linux OS, Cybersecurity fundamentals, Git/GitHub
+                  TCP/IP, subnetting fundamentals, network troubleshooting, Linux CLI, cybersecurity fundamentals
                 </p>
               </div>
               <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800 space-y-1 md:col-span-2">
-                <span className="font-bold text-white text-xs block text-cyan-300">Electronics Maintenance</span>
-                <p className="text-slate-300 text-justify">Basic hardware diagnostics, component testing, circuitry repair</p>
+                <span className="font-bold text-white text-xs block text-cyan-300">Hardware & Electronics Servicing</span>
+                <p className="text-slate-300 text-justify">Hardware diagnostics, equipment servicing, fault testing, component diagnosis</p>
               </div>
             </div>
           </div>
@@ -163,21 +175,21 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
             </h3>
             <div className="space-y-3">
               <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800">
-                <h4 className="font-bold text-white text-xs md:text-sm">AI Study Coach | Full-Stack Web Application</h4>
+                <h4 className="font-bold text-white text-xs md:text-sm">AI Study Coach | Practical Full-Stack Project</h4>
                 <p className="text-xs text-slate-300 mt-1 text-justify">
-                  Developed an AI-powered study platform that helps students learn through interactive chat, personalized study assistance, and educational resources.
+                  Developed as a practical project: an interactive study platform that assists students with chat-based topic assistance, study planning, and learning resources.
                 </p>
               </div>
               <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800">
-                <h4 className="font-bold text-white text-xs md:text-sm">Cargo Management System | Full-Stack Web Application</h4>
+                <h4 className="font-bold text-white text-xs md:text-sm">Cargo Management System | Practical Full-Stack Project</h4>
                 <p className="text-xs text-slate-300 mt-1 text-justify">
-                  Designed and developed a cargo management system for managing shipments, customers, and logistics operations.
+                  Designed and developed as a practical full-stack project for managing shipments, customer records, and logistics tracking.
                 </p>
               </div>
               <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-800">
-                <h4 className="font-bold text-white text-xs md:text-sm">Book Rental Application | Full-Stack Web Application</h4>
+                <h4 className="font-bold text-white text-xs md:text-sm">Book Rental Application | Practical Full-Stack Project</h4>
                 <p className="text-xs text-slate-300 mt-1 text-justify">
-                  Developed an online book rental platform that enables users to browse, rent, and manage book collections.
+                  Built as a practical web application that enables users to browse, rent, and manage book collections with return tracking.
                 </p>
               </div>
             </div>
@@ -212,7 +224,7 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
               <div className="space-y-2 text-xs">
                 <div className="flex justify-between items-center bg-slate-900/60 p-2 rounded-lg border border-slate-800">
                   <span className="font-bold text-white">Amharic</span>
-                  <span className="text-cyan-400 font-mono">Native proficiency</span>
+                  <span className="text-cyan-400 font-mono">Native</span>
                 </div>
                 <div className="flex justify-between items-center bg-slate-900/60 p-2 rounded-lg border border-slate-800">
                   <span className="font-bold text-white">English</span>
