@@ -81,3 +81,14 @@ body {
   animation: pulse-glow 6s infinite ease-in-out;
 }
 
+/* Natural word spacing for justified text */
+.text-justify {
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
+  text-wrap: pretty;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  word-spacing: normal;
+}
+

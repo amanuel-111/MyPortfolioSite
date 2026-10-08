@@ -5,7 +5,7 @@ const educationData = [
   {
     institution: 'Bahir Dar University',
     location: 'Bahir Dar, Ethiopia',
-    degree: 'BSc Computer Science (2019–2025)',
+    degree: 'BSc Computer Science',
     type: 'Higher Education Degree',
     icon: GraduationCap,
     description: 'Foundational study of computer science principles, software development methodologies, database systems, operating systems, networking fundamentals, and computer architecture.',
